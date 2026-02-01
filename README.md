@@ -1,16 +1,4 @@
-| |  | |
-|--- | --- | ---|
-|:information_source: | **Summary** | Combines the Topic Excerpts an AI summary gists buttons |
-|:eyeglasses: | **Preview** | `<https://discourse.theme-creator.io/theme/Lilly/discourse-topic-excerpts-gists-button>`|
-|:hammer_and_wrench: | **Repository** | `<https://github.com/Lillinator/discourse-topic-excerpts-gists-button>`|
-|:question: | **Install Guide** | [How to install a theme or theme component](https://meta.discourse.org/t/how-do-i-install-a-theme-or-theme-component/63682)|
-|:open_book: | **New to Discourse Themes?** | [Beginner’s guide to using Discourse Themes](https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966)|
-
-
-`[wrap=theme-install-button repo-name=discourse-sidebar-reorder repo-url=https://github.com/Lillinator/discourse-topic-excerpts-gists-button.git]
-Install this theme component
-[/wrap]`
-
+# Discourse Topic Excerpts & AI Summary Gists Button
 
 ## 👩‍💻 Overview
 
