@@ -26,10 +26,7 @@ This theme component combines the Discourse AI summary gists button and the Topi
 ## 💡 Possible Future Todos
 
 - Move category and tag badges to footer in Topic Excerpt cards?
-
-## 🎶 Notes
-
--
+- Category or group exclusions?
 
 ---
 
