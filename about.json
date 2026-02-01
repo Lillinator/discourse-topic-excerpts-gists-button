@@ -1,10 +1,10 @@
 {
-  "name": "Topic Excerpts AI Summary Gists Toggle",
+  "name": "Discourse Topic Excerpts and AI Gists Button",
   "component": true,
   "authors": "Discourse",
   "about_url": "https://github.com/Lillinator/topic-excerpts-gists-toggle/blob/dev/README.md",
   "license_url": "https://github.com/Lillinator/topic-excerpts-gists-toggle/blob/dev/LICENSE",
-  "theme_version": "0.0.1",
+  "theme_version": "1.0.0",
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
