@@ -13,34 +13,6 @@ This theme component combines the Discourse AI summary gists button and the Topi
 |`Show labels` |Enable or disable the button labels in desktop and tablet viewport sizes, and the drop down options always show the labels in desktop. Mobile always just shows icons. |
 
 
-## :camera_flash: Screenshots
-
-#### Default Admin settings
-Administrators can chose to show a text label on desktop, as well as edit the button label strings.
-
-<img width="70%" height="70%" alt="image" src="https://github.com/user-attachments/assets/109239c4-a3eb-47b3-ad17-120dbb6dc61e" />
-
-
-#### User Experience
-
-With default text labels and compact selected.
-
-<img width="70%" height="70%" alt="image" src="https://github.com/user-attachments/assets/84cf649b-77b5-4f67-a2c7-ca56af2491c2" />
-
-With `Show_labels` disabled and selecting AI topic summary gists.
-
-<img width="70%" height="70%" alt="image" src="https://github.com/user-attachments/assets/02cb4bf4-843f-443f-8abc-1155d94301e8" />
-
-
-#### No AI? No problem!
-AI summary gists turned off (`AI_summary_gists_enabled` disabled) and only Topic Excerpts being used. Also some shortened button labels (see text strings in settings).
-
-<img width="70%" height="70%" alt="image" src="https://github.com/user-attachments/assets/10b3f141-b5c5-41d7-96ef-1be4b96f36e3" />
-
-
-#### Mobile 
-In mobile-sized viewport, the button is default icon-only and menu behaves same as gists button, popping up from the bottom of screen.
-
 ***
 
 ## 💼 Use Cases & Features
