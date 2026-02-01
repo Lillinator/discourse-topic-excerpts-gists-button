@@ -46,3 +46,9 @@
     }
   }
 }
+
+// ** Hide the button on the categories route * /
+
+body.navigation-categories .excerpts-gists-toggle-btn {
+  display: none;
+}
