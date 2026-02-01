@@ -2,7 +2,11 @@
 
 ## 👩‍💻 Overview
 
-This theme component combines the Discourse AI summary gists button and the Topic Excerpts button to make a 3-way topic list views with one button solution.  It can also be used without AI summaries for just default compact and excerpts, since it also works for mobile excerpts, whereas the excerpts button disappears by default in mobile viewport.  The button includes a new icon for Topic Excerpts.
+This theme component combines the Discourse AI summary gists button and the Topic Excerpts button to make the 3 topic list view options more convenient for users with a one button solution.
+
+It can also be used without AI summaries for just default compact and excerpts to provide a better UX, since the excerpts button disappears by default in mobile viewport.
+
+The component includes a new button icon for Topic Excerpts.
 
 ***
 
