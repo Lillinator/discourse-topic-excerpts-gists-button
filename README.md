@@ -18,7 +18,7 @@ This theme component combines the Discourse AI summary gists button and the Topi
 #### Default Admin settings
 Administrators can chose to show a text label on desktop, as well as edit the button label strings.
 
-<img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/109239c4-a3eb-47b3-ad17-120dbb6dc61e" />
+<img width="70%" height="70%" alt="image" src="https://github.com/user-attachments/assets/109239c4-a3eb-47b3-ad17-120dbb6dc61e" />
 
 
 #### User Experience
