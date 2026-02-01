@@ -27,11 +27,6 @@ With default text labels and compact selected.
 
 <img width="70%" height="70%" alt="image" src="https://github.com/user-attachments/assets/84cf649b-77b5-4f67-a2c7-ca56af2491c2" />
 
-Topic excerpts selected.
-
-<img width="70%" height="70%" alt="image" src="https://github.com/user-attachments/assets/79ae28f4-03d0-4807-b738-b7174b729a1b" />
-
-
 With `Show_labels` disabled and selecting AI topic summary gists.
 
 <img width="70%" height="70%" alt="image" src="https://github.com/user-attachments/assets/02cb4bf4-843f-443f-8abc-1155d94301e8" />
