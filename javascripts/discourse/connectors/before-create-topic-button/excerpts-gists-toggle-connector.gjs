@@ -6,7 +6,10 @@ export default class ExcerptsGists extends Component {
   @service topicThumbnails; // avoid Topic Thumbnails theme component
 
   get shouldShow() {
-    return !this.topicThumbnails?.enabledForRoute;
+    const routeName = this.router.currentRouteName;
+    const isCategoriesPage = routeName === "discovery.categories";
+    
+    return !this.topicThumbnails?.enabledForRoute && !isCategoriesPage;
   }
 
   <template>
