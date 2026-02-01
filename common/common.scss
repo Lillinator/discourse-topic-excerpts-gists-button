@@ -34,6 +34,10 @@
   }
 }
 
+.excerpts-gists-toggle-content .dropdown-menu {
+  min-width: auto;
+}
+
 // ** Mobile viewport margin correction and hide button label always * /
 
 @include viewport.until(md) {
