@@ -6,7 +6,9 @@ This theme component combines the Discourse AI summary gists button and the Topi
 
 ## ⚙️ Settings
 
-`Show labels` Enable or disable the button labels in desktop and tablet viewport sizes, and the drop down options always show the labels in desktop. Mobile always just shows icons.
+|Setting | Description|
+|--- | ---|
+|`Show labels` |Enable or disable the button labels in desktop and tablet viewport sizes, and the drop down options always show the labels in desktop. Mobile always just shows icons. |
 
 ## 💼 Use Cases & Features
 
