@@ -1,0 +1,7 @@
+en:
+  theme_metadata:
+    description: "Combines Discourse Topic Excerpts and AI Summary Gists buttons"
+  layout:
+    compact: "Default Compact"
+    excerpts: "Topic Excerpts"
+    ai_summaries: "Topic Summaries"

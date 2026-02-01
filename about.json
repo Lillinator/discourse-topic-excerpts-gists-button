@@ -1,0 +1,13 @@
+{
+  "name": "Discourse Topic Excerpts and AI Gists Button",
+  "component": true,
+  "authors": "Lilly, Moin",
+  "about_url": "https://github.com/Lillinator/discourse-topic-excerpts-gists-button/blob/dev/README.md",
+  "license_url": "https://github.com/Lillinator/discourse-topic-excerpts-gists-button/blob/dev/LICENSE",
+  "theme_version": "1.0.0",
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+   "icons-sprite": "/assets/custom-icons.svg"
+  }
+}
