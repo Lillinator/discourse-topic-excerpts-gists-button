@@ -58,3 +58,11 @@ In mobile-sized viewport, the button is default icon-only and menu behaves same 
 ## 🎶 Notes
 
 -
+
+---
+
+**Discourse Meta Topic**: https://meta.discourse.org/t/discourse-topic-excerpts-gists-button
+
+**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/t/discourse-topic-excerpts-gists-button) or start a PR on this repo.  
+
+**To hire me or buy me coffee**: visit me here: [Lilly@Discourse Meta](https://meta.discourse.org/u/Lilly/summary).
