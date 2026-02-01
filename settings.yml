@@ -1,0 +1,4 @@
+show_labels:
+  type: bool
+  default: true
+  description: "Show text labels on desktop (mobile always shows icons only)"

@@ -1,0 +1,48 @@
+@use "lib/viewport";
+
+// ** Hide the existing buttons * /
+
+.excerpt-toggle {
+  display: none !important;
+}
+.fk-d-menu__trigger.topic-list-layout-trigger.btn-default.btn-icon {
+  display: none !important;
+}
+.excerpts-gists-toggle-btn {
+  padding: 0 !important;
+} 
+
+// ** Hover fill for button * /
+
+.excerpts-gists-toggle-btn.excerpts-gists-toggle-btn.btn:hover .d-button-label {
+  color: var(--d-button-default-icon-color--hover) !important;
+}
+
+.excerpts-gists-toggle-btn.btn:hover .d-icon {
+  fill: var(--d-button-default-icon-color--hover) !important;
+}
+
+// ** Button right spacing * /
+
+@if $show_labels == "true" {
+  .excerpts-gists-toggle-btn.btn .d-icon {
+    margin-right: 0.5em ;
+  }
+} @else {
+  .excerpts-gists-toggle-btn.btn .d-icon {
+    margin-right: 0em ;
+  }
+}
+
+// ** Mobile viewport margin correction and hide button label always * /
+
+@include viewport.until(md) {
+  .excerpts-gists-toggle-btn.btn .d-icon {
+    margin-right: 0em !important;
+  }
+  .excerpts-gists-toggle-trigger {
+    .d-button-label {
+      display: none;
+    }
+  }
+}
