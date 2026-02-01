@@ -39,7 +39,7 @@ AI summary gists turned off (`AI_summary_gists_enabled` disabled) and only Topic
 
 
 #### Mobile 
-Button is default icon-only and menu behaves same as gists button, popping up from the bottom of screen.
+In mobile-sized viewport, the button is default icon-only and menu behaves same as gists button, popping up from the bottom of screen.
 
 ***
 
