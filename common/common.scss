@@ -21,6 +21,7 @@
 .discourse-no-touch .excerpts-gists-toggle-btn.btn:hover:not(.active) .d-icon {
   fill: var(--d-button-default-icon-color--hover) !important;
 }
+
 // ** Button right spacing * /
 
 @if $show_labels == "true" {
