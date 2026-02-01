@@ -12,13 +12,13 @@
   padding: 0 !important;
 } 
 
-// ** Hover fill for button * /
+// ** Hover fill for button on no-touch devices * /
 
-.excerpts-gists-toggle-btn.excerpts-gists-toggle-btn.btn:hover .d-button-label {
+.discourse-no-touch .excerpts-gists-toggle-btn.excerpts-gists-toggle-btn.btn:hover .d-button-label {
   color: var(--d-button-default-icon-color--hover) !important;
 }
 
-.excerpts-gists-toggle-btn.btn:hover .d-icon {
+.discourse-no-touch .excerpts-gists-toggle-btn.btn:hover .d-icon {
   fill: var(--d-button-default-icon-color--hover) !important;
 }
 

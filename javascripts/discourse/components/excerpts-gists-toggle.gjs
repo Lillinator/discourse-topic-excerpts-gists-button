@@ -14,8 +14,7 @@ const COMPACT = "compact";
 const EXCERPTS = "excerpts";
 const AI_SUMMARIES = "ai-summaries";
 
-/**
- * ExcerptsGistsToggle Component
+/** ExcerptsGistsToggle Component
  * 
  * Unified dropdown toggle for switching between topic list view modes:
  * - Compact: Standard topic list (no excerpts, no AI summaries)
@@ -30,8 +29,8 @@ const AI_SUMMARIES = "ai-summaries";
  * Used in connectors:
  * - before-create-topic-button (topic lists)
  * - after-filter-navigation-menu (filtered views)
- * - user-messages-controls-bottom (PMs)
- */
+ * - user-messages-controls-bottom (PMs) */
+
 export default class ExcerptsGistsToggle extends Component {
   @service excerptState; // Manages excerpt display preference
   @service gists; // Manages AI summary display preference (from AI plugin)
@@ -39,19 +38,17 @@ export default class ExcerptsGistsToggle extends Component {
   @service site;
   @service siteSettings;
 
-  /**
-   * Determines if button label text should be shown
-   * @returns {boolean} - false on mobile or if show_labels setting is disabled
-   */
+  /** Determines if button label text should be shown
+   * @returns {boolean} - false on mobile or if show_labels setting is disabled */
+
   get showLabel() {
     return !this.site.mobileView && settings.show_labels;
   }
 
-  /**
-   * Builds available view mode options
+  /** Builds available view mode options
    * AI Summaries option only included if gists service exists and enabled in settings
-   * @returns {Array<{id: string, labelKey: string, icon: string}>}
-   */
+   * @returns {Array<{id: string, labelKey: string, icon: string}>} */
+
   get buttons() {
     const options = [
       {
@@ -78,10 +75,9 @@ export default class ExcerptsGistsToggle extends Component {
     return options;
   }
 
-  /**
-   * Determines current active view mode based on service states
-   * @returns {string} - One of: COMPACT, EXCERPTS, or AI_SUMMARIES
-   */
+  /** Determines current active view mode based on service states
+   * @returns {string} - One of: COMPACT, EXCERPTS, or AI_SUMMARIES */
+
   get selectedOptionId() {
     if (this.gists?.currentPreference === "table-ai") {
       return AI_SUMMARIES;
@@ -91,10 +87,9 @@ export default class ExcerptsGistsToggle extends Component {
     return COMPACT;
   }
 
-  /**
-   * Gets button config for currently selected view mode
-   * @returns {Object} - Button object with id, labelKey, and icon
-   */
+  /** Gets button config for currently selected view mode
+   * @returns {Object} - Button object with id, labelKey, and icon */
+
   get currentButton() {
     const buttonPreference = this.buttons.find(
       (button) => button.id === this.selectedOptionId
@@ -102,20 +97,18 @@ export default class ExcerptsGistsToggle extends Component {
     return buttonPreference || this.buttons[0];
   }
 
-  /**
-   * Stores DMenu API reference for programmatic control
-   * @param {Object} api - DMenu component API
-   */
+  /** Stores DMenu API reference for programmatic control
+   * @param {Object} api - DMenu component API */
+
   @action
   onRegisterApi(api) {
     this.dMenu = api;
   }
 
-  /**
-   * Handles view mode selection and updates relevant services
+  /** Handles view mode selection and updates relevant services
    * Ensures only one view mode is active at a time
-   * @param {string} optionId - Selected view mode (COMPACT, EXCERPTS, or AI_SUMMARIES)
-   */
+   * @param {string} optionId - Selected view mode (COMPACT, EXCERPTS, or AI_SUMMARIES) */
+
   @action
   onSelect(optionId) {
     if (optionId === COMPACT) {
