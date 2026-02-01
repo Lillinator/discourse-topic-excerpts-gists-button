@@ -150,42 +150,42 @@ export default class ExcerptsGistsToggle extends Component {
     this.dMenu.close();
   }
 
-  <template>
-    {{! Only render if at least one service is available }}
-    {{#if (or this.gists this.excerptState)}}
-      <DMenu
-        @modalForMobile={{true}}
-        @autofocus={{true}}
-        @identifier="excerpts-gists-toggle"
-        @onRegisterApi={{this.onRegisterApi}}
-        @triggerClass="btn-default btn-icon excerpts-gists-toggle-btn"
-      >
+<template>
+  {{#if (or this.gists this.excerptState)}}
+    <DMenu
+      @modalForMobile={{true}}
+      @autofocus={{true}}
+      @identifier="excerpts-gists-toggle"
+      @onRegisterApi={{this.onRegisterApi}}
+      @triggerClass="btn-default btn-icon excerpts-gists-toggle-btn"
+    >
       <:trigger>
-        {{! Trigger button shows current view mode }}
-        <DButton
-          @icon={{this.currentButton.icon}}
-          @label={{if this.showLabel (themePrefix this.currentButton.labelKey)}}
-          class="btn-transparent excerpts-gists-toggle-trigger {{unless this.showLabel 'no-text'}}"
-        />
-     </:trigger>
-        <:content>
-          {{! Dropdown menu with all available view modes }}
-          <DropdownMenu as |dropdown|>
-            {{#each this.buttons as |button|}}
-              <dropdown.item
-                class={{if (eq this.currentButton.id button.id) "--selected"}}
-              >
-                <DButton
-                  @label={{themePrefix button.labelKey}}
-                  @icon={{button.icon}}
-                  class="btn-transparent"
-                  @action={{fn this.onSelect button.id}}
-                />
-              </dropdown.item>
-            {{/each}}
-          </DropdownMenu>
-        </:content>
-      </DMenu>
-    {{/if}}
-  </template>
+        {{#if this.showLabel}}
+          {{icon this.currentButton.icon}}
+          <span class="d-button-label">
+            {{theme-i18n this.currentButton.labelKey}}
+          </span>
+        {{else}}
+          {{icon this.currentButton.icon}}
+        {{/if}}
+      </:trigger>
+      <:content>
+        <DropdownMenu as |dropdown|>
+          {{#each this.buttons as |button|}}
+            <dropdown.item
+              class={{if (eq this.currentButton.id button.id) "--selected"}}
+            >
+              <DButton
+                @label={{themePrefix button.labelKey}}
+                @icon={{button.icon}}
+                class="btn-transparent"
+                @action={{fn this.onSelect button.id}}
+              />
+            </dropdown.item>
+          {{/each}}
+        </DropdownMenu>
+      </:content>
+    </DMenu>
+  {{/if}}
+</template>
 }
