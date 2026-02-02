@@ -34,8 +34,8 @@ The component includes a new button icon for Topic Excerpts.
 
 ---
 
-**Discourse Meta Topic**: https://meta.discourse.org/t/discourse-topic-excerpts-gists-button
+**Discourse Meta Topic**: https://meta.discourse.org/t/discourse-topic-excerpts-ai-gists-button/394885
 
-**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/t/discourse-topic-excerpts-gists-button) or start a PR on this repo.  
+**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/t/discourse-topic-excerpts-ai-gists-button/394885) or start a PR on this repo.  
 
 **To hire me or buy me coffee**: visit me here: [Lilly@Discourse Meta](https://meta.discourse.org/u/Lilly/summary).
