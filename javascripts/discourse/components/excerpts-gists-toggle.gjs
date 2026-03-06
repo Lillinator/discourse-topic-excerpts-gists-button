@@ -152,7 +152,7 @@ export default class ExcerptsGistsToggle extends Component {
         @identifier="excerpts-gists-toggle"
         @onRegisterApi={{this.onRegisterApi}}
         @icon={{this.currentButton.icon}}
-        @translatedLabel={{if this.showLabel (themePrefix this.currentButton.labelKey)}}
+        @label={{if this.showLabel (themePrefix this.currentButton.labelKey)}}
         @triggerClass="btn-default btn-icon excerpts-gists-toggle-btn {{unless this.showLabel 'no-text'}}"
       >
         <:content>
@@ -163,7 +163,7 @@ export default class ExcerptsGistsToggle extends Component {
                 class={{if (eq this.currentButton.id button.id) "--selected"}}
               >
                 <DButton
-                  @translatedLabel={{themePrefix button.labelKey}}
+                  @label={{themePrefix button.labelKey}}
                   @icon={{button.icon}}
                   class="btn-transparent"
                   @action={{fn this.onSelect button.id}}
