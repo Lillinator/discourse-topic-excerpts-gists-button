@@ -1,36 +1,31 @@
 @use "lib/viewport";
 
-// ** Hide the existing buttons * /
-
+// ** Hide the existing legacy buttons ** //
 .excerpt-toggle {
   display: none !important;
 }
 .fk-d-menu__trigger.topic-list-layout-trigger.btn-default.btn-icon {
   display: none !important;
 }
-.excerpts-gists-toggle-btn {
-  padding: 0 !important;
-} 
 
-// ** Hover fill for button on no-touch devices * /
-
-.discourse-no-touch .excerpts-gists-toggle-btn.btn:hover:not(.active) .d-button-label {
-  color: var(--d-button-default-icon-color--hover) !important;
-}
-
-.discourse-no-touch .excerpts-gists-toggle-btn.btn:hover:not(.active) .d-icon {
-  fill: var(--d-button-default-icon-color--hover) !important;
-}
-
-// ** Button right spacing * /
-
-@if $show_labels == "true" {
-  .excerpts-gists-toggle-btn.btn .d-icon {
-    margin-right: 0.5em ;
+// ** Hover fill for button on no-touch devices ** //
+.discourse-no-touch .excerpts-gists-toggle-btn:hover:not(.active) {
+  .d-button-label {
+    color: var(--d-button-default-icon-color--hover) !important;
   }
-} @else {
-  .excerpts-gists-toggle-btn.btn .d-icon {
-    margin-right: 0em ;
+  .d-icon {
+    fill: var(--d-button-default-icon-color--hover) !important;
+  }
+}
+
+// ** Button right spacing between icon and text ** //
+.excerpts-gists-toggle-btn {
+  .d-icon {
+    @if $show_labels == "true" {
+      margin-right: 0.5em;
+    } @else {
+      margin-right: 0;
+    }
   }
 }
 
@@ -38,21 +33,36 @@
   min-width: auto;
 }
 
-// ** Mobile viewport margin correction and hide button label always * /
-
-@include viewport.until(md) {
-  .excerpts-gists-toggle-btn.btn .d-icon {
-    margin-right: 0em !important;
+// ** Fix custom excerpts icon sizing in the trigger button ** //
+.excerpts-gists-toggle-btn {
+  .d-icon.d-icon-custom-table-2rows {
+    width: 1em;
+    height: 1em;
+    // If the SVG itself has internal padding issues, 
+    // vertical-align or adjusting the baseline often fixes the "cut off" effect:
+    vertical-align: -0.125em; 
   }
-  .excerpts-gists-toggle-trigger {
+}
+
+// ** Also ensure the custom icon in the dropdown list sizes correctly ** //
+.dropdown-menu .d-icon.d-icon-custom-table-2rows {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em; 
+}
+// ** Mobile viewport margin correction and hide button label always ** //
+@include viewport.until(md) {
+  .excerpts-gists-toggle-btn {
+    .d-icon {
+      margin-right: 0 !important;
+    }
     .d-button-label {
       display: none;
     }
   }
 }
 
-// ** Hide the button on the categories route * /
-
+// ** Hide the button on the categories route ** //
 body.navigation-categories .excerpts-gists-toggle-btn {
   display: none;
 }
