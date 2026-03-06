@@ -143,7 +143,7 @@ export default class ExcerptsGistsToggle extends Component {
     this.dMenu.close();
   }
 
-  <template>
+<template>
     {{! Only render if at least one service is available }}
     {{#if (or this.gists this.excerptState)}}
       <DMenu
@@ -151,16 +151,10 @@ export default class ExcerptsGistsToggle extends Component {
         @autofocus={{true}}
         @identifier="excerpts-gists-toggle"
         @onRegisterApi={{this.onRegisterApi}}
-        @triggerClass="btn-default btn-icon excerpts-gists-toggle-btn"
+        @icon={{this.currentButton.icon}}
+        @translatedLabel={{if this.showLabel (themePrefix this.currentButton.labelKey)}}
+        @triggerClass="btn-default btn-icon excerpts-gists-toggle-btn {{unless this.showLabel 'no-text'}}"
       >
-      <:trigger>
-        {{! Trigger button shows current view mode }}
-        <DButton
-          @icon={{this.currentButton.icon}}
-          @label={{if this.showLabel (themePrefix this.currentButton.labelKey)}}
-          class="btn-transparent excerpts-gists-toggle-trigger {{unless this.showLabel 'no-text'}}"
-        />
-     </:trigger>
         <:content>
           {{! Dropdown menu with all available view modes }}
           <DropdownMenu as |dropdown|>
@@ -169,7 +163,7 @@ export default class ExcerptsGistsToggle extends Component {
                 class={{if (eq this.currentButton.id button.id) "--selected"}}
               >
                 <DButton
-                  @label={{themePrefix button.labelKey}}
+                  @translatedLabel={{themePrefix button.labelKey}}
                   @icon={{button.icon}}
                   class="btn-transparent"
                   @action={{fn this.onSelect button.id}}
@@ -181,4 +175,5 @@ export default class ExcerptsGistsToggle extends Component {
       </DMenu>
     {{/if}}
   </template>
+
 }
