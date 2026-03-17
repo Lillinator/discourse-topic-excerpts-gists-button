@@ -33,28 +33,11 @@
   min-width: auto;
 }
 
-// ** Fix custom excerpts icon sizing in the trigger button ** //
-//.excerpts-gists-toggle-btn {
-//  .d-icon.d-icon-custom-table-2rows {
-//    width: 1em;
-//    height: 1em;
-//    // If the SVG itself has internal padding issues, 
-//    // vertical-align or adjusting the baseline often fixes the "cut off" effect:
-//    vertical-align: -0.125em; 
-//  }
-//}
-
 .dropdown-menu__item .btn .svg-icon {
     width: auto;
     margin-right: 0;
 }
 
-// ** Also ensure the custom icon in the dropdown list sizes correctly ** //
-//.dropdown-menu .d-icon.d-icon-custom-table-2rows {
-//    width: 1em;
-//    height: 1em;
-//    vertical-align: -0.125em; 
-//}
 // ** Mobile viewport margin correction and hide button label always ** //
 @include viewport.until(md) {
   .excerpts-gists-toggle-btn {
