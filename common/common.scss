@@ -45,11 +45,11 @@
 }
 
 // ** Also ensure the custom icon in the dropdown list sizes correctly ** //
-.dropdown-menu .d-icon.d-icon-custom-table-2rows {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.125em; 
-}
+//.dropdown-menu .d-icon.d-icon-custom-table-2rows {
+//    width: 1em;
+//    height: 1em;
+//    vertical-align: -0.125em; 
+//}
 // ** Mobile viewport margin correction and hide button label always ** //
 @include viewport.until(md) {
   .excerpts-gists-toggle-btn {
