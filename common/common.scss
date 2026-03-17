@@ -33,10 +33,6 @@
   min-width: auto;
 }
 
-.dropdown-menu__item .btn .svg-icon {
-    width: auto;
-    margin-right: 0;
-}
 
 // ** Mobile viewport margin correction and hide button label always ** //
 @include viewport.until(md) {
