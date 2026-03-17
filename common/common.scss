@@ -33,6 +33,20 @@
   min-width: auto;
 }
 
+.excerpts-gists-toggle-content .d-button-label {
+  padding-right: .5em !important;
+}
+
+.dropdown-menu__item .btn, .dropdown-menu__item .d-modal.json-schema-editor-modal .je-ready button, .d-modal.json-schema-editor-modal .je-ready .dropdown-menu__item button, .dropdown-menu__item .d-modal.json-schema-editor-modal .je-ready .json-editor-btn-add, .d-modal.json-schema-editor-modal .je-ready .dropdown-menu__item .json-editor-btn-add {
+    display: inline-flex;
+    gap: var(--d-sidebar-section-link-prefix-margin-right);
+    padding-inline: var(--d-sidebar-row-horizontal-padding);
+    width: 100%;
+    justify-content: flex-start;
+    background: rgba(0,0,0,0);
+    border-radius: var(--d-border-radius);
+    padding-right: .5em;
+}
 
 // ** Mobile viewport margin correction and hide button label always ** //
 @include viewport.until(md) {
